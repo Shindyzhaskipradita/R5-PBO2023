@@ -1,0 +1,26 @@
+print("SHINDYZP_220511004_TIF22E")
+print()
+print("4.MENCARI NILAI KERUCUT")
+print()
+print("#SOAL, DIKETAHUI")
+print("JARI-JARI KERUCUT      = 10")
+print("TINGGI KERUCUT         = 18")
+print("GARIS PELUKIS KERUCUT  = 10")
+#VARIABEL KERUCUT
+JARI_JARI = 10
+TINGGI = 18
+GARIS_PELUKIS = 10
+#NILAI PI
+from math import pi
+#RUMUS KERUCUT
+LUAS_PERMUKAAN = pi * JARI_JARI * (JARI_JARI + GARIS_PELUKIS)
+VOLUME = (1/3) * pi * (JARI_JARI ** 2) * TINGGI
+print()
+print('#RUMUS')
+print ("LUAS PERMUKAAN KRUCUT  = PI * JARI_JARI * (JARI_JARI + GARIS_PELUKIS")
+print ("VOLUME KERUCUT         = (1/3) * PI * (JARI_JARI ** 2) * TINGGI")
+print()
+print("#HASIL") 
+#OUPUT
+print("LUAS PERMUKAAN KRUCUT  = ", LUAS_PERMUKAAN)
+print("VOLUME KRUCUT          = ", VOLUME) 
