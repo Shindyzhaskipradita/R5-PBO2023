@@ -1,15 +1,14 @@
 import tkinter as tk
 from tkinter import Menu
 
-
-from bola import *
-from balok import *
-from kerucut import *
-from kubus import *
-from limas_segiempat import*
-from limas_segitiga import*
-from prisma_segitiga import*
-from tabung import*
+from FrmBalok import *
+from FrmKerucut import *
+from FrmTabung import *
+from FrmPrismaSegitiga import *
+from FrmLimasSegitiga import *
+from FrmLimpat import *
+from FrmKubus import *
+from FrmBola import *
 
 # root window
 root = tk.Tk()
@@ -35,29 +34,31 @@ file_menu.add_command(
 )
 
 app_menu.add_command(
-    label='App Balok', command= lambda: new_window("Luas dan Volume balok", balok)
+    label='App Balok', command= lambda: new_window("Luas dan volume Balok", FrmBalok)
 )
 app_menu.add_command(
-    label='App Bola', command= lambda: new_window("Luas dan Volume bola", bola)
+    label='App Kerucut', command= lambda: new_window("Luas dan volume Kerucut", FrmKerucut)
 )
 app_menu.add_command(
-    label='App Kerucut', command= lambda: new_window("Luas dan Volume kerucut", Kerucut)
+    label='App Tabung', command= lambda: new_window("Luas dan volume Tabung", FrmTabung)
 )
 app_menu.add_command(
-    label='App Kubus', command= lambda: new_window("Luas dan Volume kubus", kubus)
+    label='App PrismaSegitiga', command= lambda: new_window("Luas dan volume PrismaSegitiga", FrmPrismaSegitiga)
 )
 app_menu.add_command(
-    label='App Limas segiempat', command= lambda: new_window("Luas dan Volume Limas segiempat", limas_segiempat)
+    label='App LimasSegitiga', command= lambda: new_window("Luas dan volume LimasSegitiga", FrmLimasSegitiga)
 )
 app_menu.add_command(
-    label='App limas segitiga', command= lambda: new_window("Luas dan Volume", limas_segitiga)
+    label='App Limpat', command= lambda: new_window("Luas dan volume Limpat", FrmLimpat)
 )
 app_menu.add_command(
-    label='App Prisma', command= lambda: new_window("Luas dan Volume Prisma", prisma_segitiga)
+    label='App Kubus', command= lambda: new_window("Luas dan volume Kubus", FrmKubus)
 )
 app_menu.add_command(
-    label='App Tabung', command= lambda: new_window("Luas dan Volume Tabung", Tabung)
+    label='App Bola', command= lambda: new_window("Luas dan volume Bola", FrmBola)
 )
+
+
 def new_window( number, _class):
     new = tk.Toplevel()
     new.transient()
